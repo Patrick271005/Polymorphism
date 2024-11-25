@@ -1,11 +1,11 @@
-package ie.atu.productv3;
+package ie.atu.Productv4;
 
-
+import ie.atu.productv3.Product;
+import ie.atu.productv3.ProductDB;
 
 import java.util.Scanner;
 
 public class ProductApp {
-
     public static void main(String[] args) {
         // display a welcome message
         System.out.println("Welcome to the Product Viewer");
@@ -21,7 +21,7 @@ public class ProductApp {
             // either a book object or a software object could be returned from the ProductDb class.
             // We need to update the code so that we can handle either type of object returned.
 
-            Product p = ProductDB.getProduct(productCode);
+            ie.atu.productv3.Product p = ProductDB.getProduct(productCode);
 
             // display the output
 
